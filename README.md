@@ -8,6 +8,16 @@ LSA-Bot
 
 --------------------------------------------------------------------
 
+**IMPORTANT NOTICE**  
+1. The software is by no means complete and is still at a very early stage.  
+2. I'm in the process of cleaning the code a bit, removing the unnecessary
+files and finding a solution to host the large raw data files needed by
+the software.  
+3. The preliminary scripts needed to preprocess the text aren't yet
+included in the repository; they'll be available soon.  
+
+---
+
 **Introduction to the Project**  
 
 - LSA-Bot is a new, powerful kind of Chat-bot incentred on Latent Semantic Analysis.  
