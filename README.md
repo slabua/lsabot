@@ -13,8 +13,11 @@ LSA-Bot
 2. I'm in the process of cleaning the code a bit, removing the unnecessary
 files and finding a solution to host the large raw data files needed by
 the software.  
-3. The preliminary scripts needed to preprocess the text aren't yet
-included in the repository; they'll be available soon.  
+3. The preliminary scripts needed to preprocess the text are included in
+the repository but it isn't given yet a clear set of instructions to run
+them.  
+4. the *data* folder, due to its large dimension, is hosted at:  
+https://bitbucket.org/slabua/lsabot/downloads/data.tar.bz2
 
 ---
 
