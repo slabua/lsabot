@@ -16,7 +16,9 @@ the software.
 3. The preliminary scripts needed to preprocess the text are included in
 the repository but it isn't given yet a clear set of instructions to run
 them.  
-4. the *data* folder, due to its large dimension, is hosted at:  
+4. the *data* folder, due to its large dimension, has been compressed and
+needs to be extracted in order to work with LSA-Bot.  
+The archive is also  hosted at:  
 https://bitbucket.org/slabua/lsabot/downloads/data.tar.bz2
 
 ---
