@@ -1,12 +1,21 @@
 # LSA-Bot
-[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: GPLv3][GPLimg]][GPLurl]
 
-Copyright : (C) 2004 Salvatore La Bua [slabua(at)gmail.com](mailto:slabua@gmail.com)  
+Copyright (C) 2004 Salvatore La Bua [slabua(at)gmail.com](mailto:slabua@gmail.com)  
 http://www.slblabs.com/projects/lsabot  
 http://github.com/slabua/lsabot  
 
----
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
 
+- [IMPORTANT NOTICE](#important-notice)
+- [Introduction to the Project](#introduction-to-the-project)
+- [Some information about LSA-Bot](#some-information-about-lsa-bot)
+- [Resources](#resources)
+- [LICENSE](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## IMPORTANT NOTICE
 1. The software is by no means complete and is still at a very early stage.
 2. I am in the process of cleaning the code a bit, removing the unnecessary
@@ -18,8 +27,6 @@ http://github.com/slabua/lsabot
    to be extracted in order to work with LSA-Bot.  
    The archive is also hosted at:
    https://bitbucket.org/slabua/lsabot/downloads/data.tar.bz2
-
----
 
 ## Introduction to the Project
 
@@ -57,5 +64,24 @@ http://github.com/slabua/lsabot
 
 ## Resources
 
-1. [ResearchGate Thesis publication](https://goo.gl/LA3P5R)
+1. [ResearchGate Thesis publication][R01]
+
+## LICENSE
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+[GPLimg]: https://img.shields.io/badge/License-GPLv3-blue.svg
+[GPLurl]: https://www.gnu.org/licenses/gpl-3.0
+[R01]: https://goo.gl/LA3P5R
 
