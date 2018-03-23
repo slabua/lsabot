@@ -14,6 +14,8 @@ http://github.com/slabua/lsabot
 - [Some information about LSA-Bot](#some-information-about-lsa-bot)
 - [Resources](#resources)
 - [LICENSE](#license)
+- [Screenshots](#screenshots)
+  - [LSA-Bot main interface](#lsa-bot-main-interface)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## IMPORTANT NOTICE
@@ -81,7 +83,13 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+## Screenshots
+
+### LSA-Bot main interface
+![Main][S01]
+
 [GPLimg]: https://img.shields.io/badge/License-GPLv3-blue.svg
 [GPLurl]: https://www.gnu.org/licenses/gpl-3.0
 [R01]: https://goo.gl/LA3P5R
+[S01]: https://goo.gl/zdPcqY
 
