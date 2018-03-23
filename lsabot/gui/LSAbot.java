@@ -6,6 +6,7 @@ package lsabot.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,7 +37,10 @@ import javax.swing.JSlider;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.BevelBorder;
+import javax.swing.border.EmptyBorder;
 
 import lsabot.vect.CodVettRetriever;
 import lsabot.vect.FindResult;
@@ -97,21 +101,26 @@ public class LSAbot extends JFrame {
         
         topPanel = new JPanel();
         topPanel.setLayout(new BorderLayout(2, 10));
+        topPanel.setBorder(new EmptyBorder(0, 10, 0, 0));
         
         resultPanel = new JPanel();
         resultPanel.setLayout(new BorderLayout(10, 10));
+        resultPanel.setBorder(new EmptyBorder(0, 10, 0, 0));
         
         chooserPanel = new JPanel();
         chooserPanel.setLayout(new BorderLayout(10, 10));
         
         queryPanel = new JPanel();
         queryPanel.setLayout(new BorderLayout(10, 10));
+        queryPanel.setBorder(new EmptyBorder(0, 50, 0, 0));
         
         qBoxPanel = new JPanel();
         qBoxPanel.setLayout(new BorderLayout(10, 10));
+        qBoxPanel.setBorder(new EmptyBorder(0, 0, 0, 10));
         
         buttonPanel = new JPanel();
         buttonPanel.setLayout(new FlowLayout());
+        buttonPanel.setBorder(new EmptyBorder(0, 0, 10, 0));
         
         //icon = new ImageIcon("euflag.jpg");
         icon = new ImageIcon("lsabot.png");
@@ -125,8 +134,8 @@ public class LSAbot extends JFrame {
         resultLabel = new JLabel(" "); // Result:
         resultArea = new JTextArea(); // 10, 30
         resultArea.setText("\n Welcome to LSA-Bot." +
-                			"\n\n   Please insert your question in the query field below." +
-                			"\n   Select interaction's modes from the Options' menu."/* +
+                			"\n\n   Please type your question in the query field below." +
+                			"\n   Select interaction mode from the Options menu."/* +
                 			"\n   Use the slider to change the sensibility."*/);
         resultArea.setEditable(false);
         resultArea.setEnabled(false);
@@ -303,8 +312,8 @@ public class LSAbot extends JFrame {
 				    JOptionPane.showMessageDialog(LSAbot.this,
 				            						"Latent Semantic ChatBot."+
 				            						"\n\nAuthor:\n" +
-				            						"\n     Salvatore  La Bua" +
-				            						"\n  <slabua@gmail.com>",
+				            						"\n  Salvatore La Bua" +
+				            						"\n  slabua@gmail.com",
 				            						"Credits",
 				            						JOptionPane.INFORMATION_MESSAGE);
 				}
@@ -316,7 +325,7 @@ public class LSAbot extends JFrame {
 		
 		
 		
-    } // End of LSAbot contructor
+    } // End of LSAbot constructor
     
     /**
      * Il metodo <code>search</code> richiama l'intera procedura di acquisizione query,
@@ -430,9 +439,18 @@ public class LSAbot extends JFrame {
      */
     public static void main(String[] args) {
       LSAbot window = new LSAbot();
+      
+      try {
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+      } catch (Exception e) {
+    	  System.err.println(e);
+    	  JOptionPane.showMessageDialog(null, e, "Exception", JOptionPane.ERROR_MESSAGE);
+    	  System.exit(-1);
+      }
 
       window.setSize(500, 315); // 340
       // window.setResizable(false);
+      window.setMinimumSize(new Dimension(500, 315));
       window.show();
       
       window.addWindowListener(
